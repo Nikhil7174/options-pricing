@@ -1,0 +1,28 @@
+[project]
+name = "options-pricing-backend"
+version = "0.1.0"
+description = "Backend API and pricing engine for an options pricing and analysis tool."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "numpy>=2.1.0",
+  "pandas>=2.2.0",
+  "pydantic>=2.9.0",
+  "scipy>=1.14.0",
+  "uvicorn[standard]>=0.32.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "httpx>=0.28.0",
+  "pytest>=8.3.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
