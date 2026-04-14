@@ -1,0 +1,23 @@
+# Root-level ignores for the combined repo
+
+.frontend-git-backup*/
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+!frontend/.env.example
+
+# Backend
+backend/.venv/
+backend/.pytest_cache/
+backend/__pycache__/
+backend/**/*.pyc
+backend/*.egg-info/
+
+# Notebooks
+notebooks/.ipynb_checkpoints/
